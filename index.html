@@ -9,7 +9,7 @@
   </body>
   <script>
     document.getElementById('sendHello').onclick = function() {
-      fetch('/send-message', {
+      fetch('http://localhost:8080/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
