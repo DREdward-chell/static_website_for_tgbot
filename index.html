@@ -9,16 +9,7 @@
   </body>
   <script>
     document.getElementById('sendHello').onclick = function() {
-      fetch('http://localhost:8080/send', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            message: 'hello, webview',
-            chatId: '1828681389'
-        })
-      });
+      Telegram.WebApp.sendData("hello webview");
     }
   </script>
 </html>
